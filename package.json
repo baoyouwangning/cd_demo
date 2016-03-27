@@ -8,6 +8,14 @@
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
     "deploy": "set NODE_ENV=production && webpack -p --progress --config webpack.production.config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baoyouwangning/cd_demo.git"
+  },
+  "engines": {
+    "node": "5",
+    "npm": "3"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
