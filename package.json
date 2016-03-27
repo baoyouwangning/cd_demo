@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "mocha": "mocha -u bdd",
+    "cov": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info",
     "deploy": "set NODE_ENV=production && webpack -p --progress --config webpack.production.config.js"
   },
   "repository": {
@@ -19,6 +21,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
