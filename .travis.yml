@@ -8,9 +8,10 @@ before_script:
 script: npm run deploy
 after_success: "< coverage/lcov.info ./node_modules/coveralls/bin/coveralls.js"
 before_deploy: echo 'deploy start'
-after_deploy: echo 'deploy success'
 deploy:
   provider: heroku
   api_key:
     secure: Iw8vH9Bch39k+H2Dd/74CCreqVFOmXCdKI72eo/sZ/H9tYpom627qax0VTs7T9VvIn7L8HGfAvx+0a3hfI3tKW3nFzKPN7dR4aisfOQSjHYl3l+xdS4trCFzutojP7aeWpr21svGorlhsY+5Iyp89kxwrqRsym8M8bkIMXYB82//mBcWsiajtc5nJ7ve9N2id56XLwnzr0SstJGP1sWUB+JREi6uXLoeFoF6oh9QEJtdWnYTJD1v8WWIZi/AR1THI8gHl+vq0sxG4KVr6FsW0iP00E5jTX1Hkn9nCHJXB94w6AWvA+vOveoZBPDBitYFbHEP6Y0oalxKW70LL3vmmSxRK6Bwrnyn6pyHwg5sDSyjdgHU/UHnizHkg9XkaAt3rgu/J341kscu7B5YKQ8y5Hb+3I4Es5O7mMjLMkL0mVTJE0v+wv0f76c5Pudibly1xrk6vo5Agai68UoGwxSlcPuJ0t5+WURHklbxoaZZJbwIq29zAXHDFfLRjKkHFNDIoCT3b6neoSz1++RYKncRMK+qkMgP0Ve1W/zHFiSO4uZMDnHFAjcgWXL2GjKDSHfoHIiv38LUCBHu9l9j4KWZhw6NJ3pm5erRai3mCNvgrvWficHkBz88gJdQMAZJYq+1wbtpPHT7OJFS/53nBvj7880SY7zwpwON5sjSBV2OMUs=
-  app: cddemo
+  app:
+    master: cddemo
+after_deploy: echo 'deploy success'
