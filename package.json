@@ -9,7 +9,7 @@
     "mocha": "mocha -u bdd",
     "cov": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info",
     "deploy": "set NODE_ENV=production && webpack -p --progress --config webpack.production.config.js",
-    "start": "npm run dev"
+    "start": "deploy"
   },
   "repository": {
     "type": "git",
