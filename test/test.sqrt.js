@@ -1,7 +1,14 @@
 var chai = require('chai');
 var assert = require('chai').assert;
 var expect = chai.expect;
-var My = require('../app/sqrt');
+// var My = require('../app/sqrt');
+
+var My = {
+    sqrt: function(x) {
+        if (x < 0) throw new Error("负值没有平方根");
+        return Math.exp(Math.log(x)/2);
+    }
+};
 
 describe("sqrt", function() {
 

@@ -24,6 +24,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
+    "html-webpack-plugin": "^2.15.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5"
   },

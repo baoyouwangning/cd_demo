@@ -11,7 +11,7 @@ class Hello extends React.Component {
     render() {
         return (
             <div className="component-wrapper">
-                Hi world!!
+                Hi world!
             </div>
         );
     }
